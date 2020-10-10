@@ -39,7 +39,6 @@
 	margin: auto;
 	padding: 45px 0;
 	display: grid;
-	grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
 	grid-gap: 2vh;
 	grid-auto-flow: dense;
 }
@@ -48,22 +47,22 @@
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
-	border-radius: 2px;
+	box-shadow: 0px 2px 2px rgba(78, 5, 75, 0.9);
+	border-radius: 5px;
 }
 .main .gallery .img:first-child{
 	grid-column-start: span 2;
 	grid-row-start: span 2;
 }
 .main .gallery .img:nth-child(2n+3){
-	grid-row-start: span 2;
+	grid-row-start: span 1;
 }
 .main .gallery .img:nth-child(4n+5){
 	grid-column-start: span 2;
 	grid-row-start: span 2;
 }
 .main .gallery .img:nth-child(6n+7){
-	grid-row-start: span 1;
+	grid-row-start: span 3;
 }
 .main .gallery .img:nth-child(8n+50){
 	grid-column-start: span 1;
@@ -74,8 +73,8 @@
 	width: 100%;
 	object-fit: cover;
 	filter: brightness(0.5) grayscale(100);
-	border-radius: 2px;
-	transition: 0.3s ease-in-out;
+
+	transition: 0.3s ;
 }
 .main .gallery .img:hover img{
 	filter: brightness(1) grayscale(0);
@@ -83,11 +82,11 @@
 
 @media only screen and (max-width: 768px){
 	.main h1{
-		font-size: 1.8em;
+		font-size: 40px;
 		width: 400px;
 	}
 	.main p{
-		font-size: 1.2em;
+		font-size: 40px;
 	}
 	.main .gallery{
 		display: grid;
@@ -96,11 +95,8 @@
 }
 @media only screen and (max-width: 400px){
 	.main h1{
-		font-size: 1.2em;
+		font-size: 40px;
 		width: 300px;
-	}
-	.main p{
-		font-size: 0.89em;
 	}
 	.main .gallery{
 		display: block;
@@ -116,3 +112,18 @@
 		filter: brightness(1) grayscale(0);
 	}
 }
+
+	.fa-facebook {
+		background: #3B5998;
+		color: white;}
+
+	.fa-instagram {
+			background: #125688;
+			color: white;}
+	.fa-linkedin {
+			background: #007bb5;
+			color: white;
+			  }
+	.socialmedia {
+		position: relative;
+	}
